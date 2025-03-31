@@ -1,0 +1,216 @@
+/* style applied to whole website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body style */
+body {
+    background-image: url('blackhole.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1B1A55;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* sidebar navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1B1A55;;
+    color: white;
+    padding-top: 20px;
+}
+
+.sidenav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidenav li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidenav li:hover {
+    background-color: #555;
+}
+
+.sidenav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* form style */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.topnav input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.topnav button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.topnav button:hover {
+    background-color: #555;
+}
+button[onclick="logout()"] {
+    display: block !important;
+}
+
+#news {
+    width: 80%;  
+    margin: 0 auto;  /* Center the news section */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    height: 400px;  /* Set a fixed height for scrolling */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#news h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#news article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#news article h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+#news article p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Style for the scrollbar */
+#news::-webkit-scrollbar {
+    width: 8px;
+}
+
+#news::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+#news::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #news {
+        width: 95%;
+    }
+
+    #news h2 {
+        font-size: 1.8em;
+    }
+
+    #news article h3 {
+        font-size: 1.3em;
+    }
+
+    #news article p {
+        font-size: 1em;
+    }
+}
+button {
+    transition: transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(1.2); /* Makes the button pop when clicked */
+}
+

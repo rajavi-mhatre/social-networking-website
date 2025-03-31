@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "6745b043bc44997b1a1b4c58"
+  },
+  "id": 1,
+  "name": "John",
+  "email": "johndoe123@abc.com"
+},
+{
+  "_id": {
+    "$oid": "6745b16abc44997b1a1b4c5a"
+  },
+  "name": "Kelly"
+},
+{
+  "_id": {
+    "$oid": "6745b3f9bc44997b1a1b4c60"
+  },
+  "id": 1,
+  "name": "John",
+  "email": "johndoe123@abc.com",
+  "password": 123
+}]
